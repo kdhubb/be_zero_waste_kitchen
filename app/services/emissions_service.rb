@@ -29,7 +29,7 @@ class EmissionsService
   end
 
   def conn
-    Faraday.new(url: 'https://beta4.api.climatiq.io/estimate') do |faraday|
+    Faraday.new(url: 'https://api.climatiq.io/data/v1/estimate') do |faraday|
       faraday.headers['Authorization'] = ENV['EMISSIONS_API_KEY']
       faraday.headers['Content-Type: '] = 'application/json'
     end

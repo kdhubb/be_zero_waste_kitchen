@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 31 Jul 2023 15:29:02 GMT
+      - Thu, 07 Mar 2024 00:17:35 GMT
       X-Amzn-Requestid:
-      - 6fa04ae1-0f46-4f75-96f5-cbd6038c8d27
+      - 9603fdf0-7073-4a68-8e91-4b9d80bb1af5
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -37,24 +37,24 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - I73x0GkZPHcFjdg=
+      - UO4g-E4XPHcEO_Q=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-64c7d33e-4257155a287bf4ae009609fd;Sampled=0;lineage=6ae1048e:0
+      - Root=1-65e9079f-00d78fd543cacbb81abdb27d;Parent=46fd8032a93e788e;Sampled=0;lineage=6ae1048e:0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 85d3c7f5b91d4c8492ba27d65fa677d0.cloudfront.net (CloudFront)
+      - 1.1 d1f45df4933065053cea3fd574dc6f20.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-P1
       X-Amz-Cf-Id:
-      - trJzOXom3wZRF8P0m4RCx9-fpef8PlzB-_D5Bj-Det5f72r0W9w6gQ==
+      - QTB1sRRmbNC56LZlSIrz3zxKyf5jTTYrVUmy8SGj5w7RWB-SYW9g7w==
     body:
       encoding: UTF-8
       string: '[{"name": "chicken", "calories": 2019.8, "serving_size_g": 907.184,
         "fat_total_g": 117.0, "fat_saturated_g": 33.2, "protein_g": 215.3, "sodium_mg":
         655, "potassium_mg": 1625, "cholesterol_mg": 835, "carbohydrates_total_g":
         0.4, "fiber_g": 0.0, "sugar_g": 0.0}]'
-  recorded_at: Mon, 31 Jul 2023 15:29:02 GMT
+  recorded_at: Thu, 07 Mar 2024 00:17:35 GMT
 recorded_with: VCR 6.2.0
