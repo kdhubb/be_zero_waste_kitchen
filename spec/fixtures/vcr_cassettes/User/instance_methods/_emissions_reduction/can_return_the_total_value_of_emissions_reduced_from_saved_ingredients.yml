@@ -1,81 +1,12 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://api.api-ninjas.com/v1/nutrition?query=2.0%20lbs%20Chicken%200.5%20lbs%20Cheese%202.0%20lbs%20ground%20beef%202.0%20oz%20eggs%20
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Api-Key:
-      - X-Api-Key
-      User-Agent:
-      - Faraday v2.7.10
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1058'
-      Connection:
-      - keep-alive
-      Date:
-      - Fri, 04 Aug 2023 01:00:11 GMT
-      X-Amzn-Requestid:
-      - 07e07b07-49e9-4893-a4eb-90c1f11be771
-      Access-Control-Allow-Origin:
-      - "*"
-      Allow:
-      - GET, OPTIONS, POST
-      Access-Control-Allow-Headers:
-      - "*"
-      X-Amz-Apigw-Id:
-      - JHEQSHkuvHcF3dA=
-      Access-Control-Allow-Methods:
-      - GET, OPTIONS, POST
-      X-Amzn-Trace-Id:
-      - Root=1-64cc4d9b-1575b417433d821e6ce62bc3;Sampled=0;lineage=6ae1048e:0
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 f0fd475ee39ced21db4c99c5a3fdb1b2.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - DEN52-P1
-      X-Amz-Cf-Id:
-      - BFlnOFjp9zNoYa2USGMCbDPwBKTEGxIs7o9oyVfbsEhs70WFZqiXBg==
-    body:
-      encoding: UTF-8
-      string: '[{"name": "chicken", "calories": 20197.6, "serving_size_g": 9071.84,
-        "fat_total_g": 1170.2, "fat_saturated_g": 331.7, "protein_g": 2152.8, "sodium_mg":
-        6557, "potassium_mg": 16251, "cholesterol_mg": 8357, "carbohydrates_total_g":
-        4.3, "fiber_g": 0.0, "sugar_g": 0.0}, {"name": "cheese", "calories": 8933.5,
-        "serving_size_g": 2267.96, "fat_total_g": 749.1, "fat_saturated_g": 429.2,
-        "protein_g": 515.9, "sodium_mg": 15008, "potassium_mg": 10431, "cholesterol_mg":
-        2271, "carbohydrates_total_g": 71.8, "fiber_g": 0.0, "sugar_g": 10.6}, {"name":
-        "ground beef", "calories": 25270.6, "serving_size_g": 9071.84, "fat_total_g":
-        1551.4, "fat_saturated_g": 587.8, "protein_g": 2470.2, "sodium_mg": 8342,
-        "potassium_mg": 20287, "cholesterol_mg": 8177, "carbohydrates_total_g": 0.0,
-        "fiber_g": 0.0, "sugar_g": 0.0}, {"name": "eggs", "calories": 818.2, "serving_size_g":
-        566.99, "fat_total_g": 53.1, "fat_saturated_g": 17.7, "protein_g": 71.4, "sodium_mg":
-        814, "potassium_mg": 1134, "cholesterol_mg": 2118, "carbohydrates_total_g":
-        4.1, "fiber_g": 0.0, "sugar_g": 2.1}]'
-  recorded_at: Fri, 04 Aug 2023 01:00:11 GMT
-- request:
     method: post
     uri: https://beta4.api.climatiq.io/estimate
     body:
       encoding: UTF-8
       string: '{"emission_factor":{"activity_id":"waste_type_food_waste-disposal_method_landfilled","source":"EPA","region":"US","year":2022,"source_lca_activity":"end_of_life","data_version":"2.2"},"parameters":{"weight":20978.63,"weight_unit":"g"}}'
     headers:
-      Authorization:
-      - Authorization
       'Content-Type: ':
       - application/json
       User-Agent:
@@ -84,6 +15,8 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
+      Authorization:
+      - Authorization
   response:
     status:
       code: 200
@@ -117,4 +50,120 @@ http_interactions:
         Waste","source_lca_activity":"end_of_life","data_quality_flags":[]},"constituent_gases":{"co2e_total":13.412489059284663,"co2e_other":null,"co2":null,"ch4":null,"n2o":null},"activity_data":{"activity_value":0.023124981136697694,"activity_unit":"short
         ton"},"audit_trail":"selector"}'
   recorded_at: Fri, 04 Aug 2023 01:00:11 GMT
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/nutrition?query=2.0%20lbs%20Chicken%200.5%20lbs%20Cheese%202.0%20lbs%20ground%20beef%202.0%20oz%20eggs%20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - X-Api-Key
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1028'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 07 Mar 2024 00:17:32 GMT
+      X-Amzn-Requestid:
+      - 75b35e36-8fbb-4d01-8d66-4e7f09867d0b
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - UO4ggEEgPHcELhg=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-65e9079c-279398b53fd09c9465a5053f;Parent=7885572958e2722f;Sampled=0;lineage=6ae1048e:0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1d841c80bfe083de03dcc909a7c5fa9c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - 9aOkna4dA441bfs-wtHlDW_iIp62-aCiUdHPubw7p6t7qtjmMuXuvA==
+    body:
+      encoding: UTF-8
+      string: '[{"name": "chicken", "calories": 2019.8, "serving_size_g": 907.184,
+        "fat_total_g": 117.0, "fat_saturated_g": 33.2, "protein_g": 215.3, "sodium_mg":
+        655, "potassium_mg": 1625, "cholesterol_mg": 835, "carbohydrates_total_g":
+        0.4, "fiber_g": 0.0, "sugar_g": 0.0}, {"name": "cheese", "calories": 893.4,
+        "serving_size_g": 226.796, "fat_total_g": 74.9, "fat_saturated_g": 42.9, "protein_g":
+        51.6, "sodium_mg": 1500, "potassium_mg": 1043, "cholesterol_mg": 227, "carbohydrates_total_g":
+        7.2, "fiber_g": 0.0, "sugar_g": 1.1}, {"name": "ground beef", "calories":
+        2527.1, "serving_size_g": 907.184, "fat_total_g": 155.1, "fat_saturated_g":
+        58.8, "protein_g": 247.0, "sodium_mg": 834, "potassium_mg": 2028, "cholesterol_mg":
+        817, "carbohydrates_total_g": 0.0, "fiber_g": 0.0, "sugar_g": 0.0}, {"name":
+        "eggs", "calories": 81.8, "serving_size_g": 56.699, "fat_total_g": 5.3, "fat_saturated_g":
+        1.8, "protein_g": 7.1, "sodium_mg": 81, "potassium_mg": 113, "cholesterol_mg":
+        211, "carbohydrates_total_g": 0.4, "fiber_g": 0.0, "sugar_g": 0.2}]'
+  recorded_at: Thu, 07 Mar 2024 00:17:32 GMT
+- request:
+    method: post
+    uri: https://api.climatiq.io/data/v1/estimate
+    body:
+      encoding: UTF-8
+      string: '{"emission_factor":{"activity_id":"waste_type_food_waste-disposal_method_landfilled","source":"EPA","region":"US","year":2022,"source_lca_activity":"end_of_life","data_version":"2.2"},"parameters":{"weight":2097.863,"weight_unit":"g"}}'
+    headers:
+      Authorization:
+      - Authorization
+      'Content-Type: ':
+      - application/json
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '653'
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - private, s-maxage=0, max-age=600, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      Strict-Transport-Security:
+      - 'Strict-Transport-Security: max-age=86400;'
+      X-Served-By:
+      - cache-den8282-DEN
+      Date:
+      - Thu, 07 Mar 2024 00:17:32 GMT
+    body:
+      encoding: UTF-8
+      string: '{"co2e":1.341,"co2e_unit":"kg","co2e_calculation_method":"ar4","co2e_calculation_origin":"source","emission_factor":{"name":"Food
+        Waste - Landfilled","activity_id":"waste_type_food_waste-disposal_method_landfilled","id":"163972ef-d865-4bbe-ab3b-f8b2465cf825","access_type":"public","source":"EPA","source_dataset":"GHG
+        Emission Factors Hub","year":2022,"region":"US","category":"Food and Organic
+        Waste","source_lca_activity":"end_of_life","data_quality_flags":[]},"constituent_gases":{"co2e_total":1.341,"co2e_other":null,"co2":null,"ch4":null,"n2o":null},"activity_data":{"activity_value":0.002312,"activity_unit":"short
+        ton"},"audit_trail":"selector"}'
+  recorded_at: Thu, 07 Mar 2024 00:17:32 GMT
 recorded_with: VCR 6.2.0
